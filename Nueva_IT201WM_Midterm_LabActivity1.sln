@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nueva_IT201WM_Midterm_LabActivity1", "Nueva_IT201WM_Midterm_LabActivity1\Nueva_IT201WM_Midterm_LabActivity1.csproj", "{FCC5E8B8-FA48-481B-ABF6-FC52FD3F3A6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCC5E8B8-FA48-481B-ABF6-FC52FD3F3A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC5E8B8-FA48-481B-ABF6-FC52FD3F3A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC5E8B8-FA48-481B-ABF6-FC52FD3F3A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC5E8B8-FA48-481B-ABF6-FC52FD3F3A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {924BC001-332D-4BB4-AA9D-E85E5BF1B844}
+	EndGlobalSection
+EndGlobal
