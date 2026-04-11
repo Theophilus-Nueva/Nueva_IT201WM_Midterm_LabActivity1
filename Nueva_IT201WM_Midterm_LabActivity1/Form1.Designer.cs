@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.employeeId = new System.Windows.Forms.TextBox();
+            this.departnemtName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -47,19 +47,19 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.middlename = new System.Windows.Forms.TextBox();
+            this.firstname = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.surname = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.paydate = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -85,12 +85,12 @@
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.totalDeduction_text = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.grossIncome_btn = new System.Windows.Forms.Button();
             this.netIncome_btn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.save_btn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.new_btn = new System.Windows.Forms.Button();
             this.basicIncome = new System.Windows.Forms.GroupBox();
@@ -101,7 +101,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.honorariumIncome_text = new System.Windows.Forms.TextBox();
             this.otherIncome = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -109,12 +109,14 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.otherIncome_text = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.otherdeductionsGroup = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.basicIncome.SuspendLayout();
             this.honorariumIncome.SuspendLayout();
             this.otherIncome.SuspendLayout();
+            this.otherdeductionsGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -156,20 +158,19 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Department:";
             // 
-            // textBox1
+            // employeeId
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 265);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 20);
-            this.textBox1.TabIndex = 4;
+            this.employeeId.Location = new System.Drawing.Point(142, 265);
+            this.employeeId.Name = "employeeId";
+            this.employeeId.Size = new System.Drawing.Size(172, 20);
+            this.employeeId.TabIndex = 4;
             // 
-            // textBox2
+            // departnemtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 293);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(172, 20);
-            this.textBox2.TabIndex = 5;
+            this.departnemtName.Location = new System.Drawing.Point(142, 293);
+            this.departnemtName.Name = "departnemtName";
+            this.departnemtName.Size = new System.Drawing.Size(172, 20);
+            this.departnemtName.TabIndex = 5;
             // 
             // label4
             // 
@@ -242,6 +243,7 @@
             // 
             this.grossIncome_text.Location = new System.Drawing.Point(145, 783);
             this.grossIncome_text.Name = "grossIncome_text";
+            this.grossIncome_text.ReadOnly = true;
             this.grossIncome_text.Size = new System.Drawing.Size(172, 20);
             this.grossIncome_text.TabIndex = 31;
             // 
@@ -283,19 +285,19 @@
             this.label16.TabIndex = 33;
             this.label16.Text = "SERI\'S CHOICE PAYROLL";
             // 
-            // textBox12
+            // middlename
             // 
-            this.textBox12.Location = new System.Drawing.Point(508, 107);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(238, 20);
-            this.textBox12.TabIndex = 37;
+            this.middlename.Location = new System.Drawing.Point(508, 107);
+            this.middlename.Name = "middlename";
+            this.middlename.Size = new System.Drawing.Size(238, 20);
+            this.middlename.TabIndex = 37;
             // 
-            // textBox15
+            // firstname
             // 
-            this.textBox15.Location = new System.Drawing.Point(508, 79);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(238, 20);
-            this.textBox15.TabIndex = 36;
+            this.firstname.Location = new System.Drawing.Point(508, 79);
+            this.firstname.Name = "firstname";
+            this.firstname.Size = new System.Drawing.Size(238, 20);
+            this.firstname.TabIndex = 36;
             // 
             // label20
             // 
@@ -322,12 +324,12 @@
             this.textBox16.Size = new System.Drawing.Size(238, 20);
             this.textBox16.TabIndex = 41;
             // 
-            // textBox17
+            // surname
             // 
-            this.textBox17.Location = new System.Drawing.Point(508, 136);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(238, 20);
-            this.textBox17.TabIndex = 40;
+            this.surname.Location = new System.Drawing.Point(508, 136);
+            this.surname.Name = "surname";
+            this.surname.Size = new System.Drawing.Size(238, 20);
+            this.surname.TabIndex = 40;
             // 
             // label22
             // 
@@ -379,12 +381,12 @@
             this.label25.TabIndex = 46;
             this.label25.Text = "Employee Status:";
             // 
-            // textBox20
+            // paydate
             // 
-            this.textBox20.Location = new System.Drawing.Point(508, 232);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(238, 20);
-            this.textBox20.TabIndex = 45;
+            this.paydate.Location = new System.Drawing.Point(508, 232);
+            this.paydate.Name = "paydate";
+            this.paydate.Size = new System.Drawing.Size(238, 20);
+            this.paydate.TabIndex = 45;
             // 
             // textBox21
             // 
@@ -474,7 +476,7 @@
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(508, 590);
+            this.textBox25.Location = new System.Drawing.Point(137, 97);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(238, 20);
             this.textBox25.TabIndex = 63;
@@ -482,7 +484,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(382, 593);
+            this.label32.Location = new System.Drawing.Point(11, 100);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(124, 13);
             this.label32.TabIndex = 62;
@@ -490,14 +492,14 @@
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(508, 564);
+            this.textBox26.Location = new System.Drawing.Point(137, 71);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(238, 20);
             this.textBox26.TabIndex = 61;
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(508, 536);
+            this.textBox27.Location = new System.Drawing.Point(137, 43);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(238, 20);
             this.textBox27.TabIndex = 60;
@@ -505,7 +507,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(383, 567);
+            this.label33.Location = new System.Drawing.Point(12, 74);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(72, 13);
             this.label33.TabIndex = 59;
@@ -514,7 +516,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(382, 539);
+            this.label34.Location = new System.Drawing.Point(11, 46);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(58, 13);
             this.label34.TabIndex = 58;
@@ -524,7 +526,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(379, 509);
+            this.label35.Location = new System.Drawing.Point(8, 16);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(139, 13);
             this.label35.TabIndex = 57;
@@ -549,7 +551,7 @@
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(508, 675);
+            this.textBox29.Location = new System.Drawing.Point(137, 182);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(238, 20);
             this.textBox29.TabIndex = 71;
@@ -557,7 +559,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(382, 678);
+            this.label37.Location = new System.Drawing.Point(11, 185);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(63, 13);
             this.label37.TabIndex = 70;
@@ -565,14 +567,14 @@
             // 
             // textBox30
             // 
-            this.textBox30.Location = new System.Drawing.Point(508, 647);
+            this.textBox30.Location = new System.Drawing.Point(137, 154);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(238, 20);
             this.textBox30.TabIndex = 69;
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(508, 619);
+            this.textBox31.Location = new System.Drawing.Point(137, 126);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(238, 20);
             this.textBox31.TabIndex = 68;
@@ -580,7 +582,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(383, 650);
+            this.label38.Location = new System.Drawing.Point(12, 157);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(66, 13);
             this.label38.TabIndex = 67;
@@ -589,19 +591,19 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(382, 622);
+            this.label39.Location = new System.Drawing.Point(11, 129);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(112, 13);
             this.label39.TabIndex = 66;
             this.label39.Text = "Faculty Savings Loan:";
             // 
-            // textBox32
+            // totalDeduction_text
             // 
-            this.textBox32.Location = new System.Drawing.Point(508, 760);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.ReadOnly = true;
-            this.textBox32.Size = new System.Drawing.Size(172, 20);
-            this.textBox32.TabIndex = 74;
+            this.totalDeduction_text.Location = new System.Drawing.Point(508, 760);
+            this.totalDeduction_text.Name = "totalDeduction_text";
+            this.totalDeduction_text.ReadOnly = true;
+            this.totalDeduction_text.Size = new System.Drawing.Size(172, 20);
+            this.totalDeduction_text.TabIndex = 74;
             // 
             // label40
             // 
@@ -642,14 +644,15 @@
             this.netIncome_btn.UseVisualStyleBackColor = true;
             this.netIncome_btn.Click += new System.EventHandler(this.netIncome_btn_Click);
             // 
-            // button3
+            // save_btn
             // 
-            this.button3.Location = new System.Drawing.Point(592, 808);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(59, 23);
-            this.button3.TabIndex = 77;
-            this.button3.Text = "SAVE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.save_btn.Location = new System.Drawing.Point(592, 808);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(59, 23);
+            this.save_btn.TabIndex = 77;
+            this.save_btn.Text = "SAVE";
+            this.save_btn.UseVisualStyleBackColor = true;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
             // 
             // button4
             // 
@@ -693,7 +696,7 @@
             this.honorariumIncome.Controls.Add(this.textBox5);
             this.honorariumIncome.Controls.Add(this.textBox6);
             this.honorariumIncome.Controls.Add(this.label11);
-            this.honorariumIncome.Controls.Add(this.textBox7);
+            this.honorariumIncome.Controls.Add(this.honorariumIncome_text);
             this.honorariumIncome.Location = new System.Drawing.Point(21, 471);
             this.honorariumIncome.Name = "honorariumIncome";
             this.honorariumIncome.Size = new System.Drawing.Size(317, 129);
@@ -751,13 +754,13 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "Income / Cut off:";
             // 
-            // textBox7
+            // honorariumIncome_text
             // 
-            this.textBox7.Location = new System.Drawing.Point(136, 98);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(172, 20);
-            this.textBox7.TabIndex = 13;
+            this.honorariumIncome_text.Location = new System.Drawing.Point(136, 98);
+            this.honorariumIncome_text.Name = "honorariumIncome_text";
+            this.honorariumIncome_text.ReadOnly = true;
+            this.honorariumIncome_text.Size = new System.Drawing.Size(172, 20);
+            this.honorariumIncome_text.TabIndex = 13;
             // 
             // otherIncome
             // 
@@ -767,7 +770,7 @@
             this.otherIncome.Controls.Add(this.textBox8);
             this.otherIncome.Controls.Add(this.textBox9);
             this.otherIncome.Controls.Add(this.label15);
-            this.otherIncome.Controls.Add(this.textBox10);
+            this.otherIncome.Controls.Add(this.otherIncome_text);
             this.otherIncome.Location = new System.Drawing.Point(21, 609);
             this.otherIncome.Name = "otherIncome";
             this.otherIncome.Size = new System.Drawing.Size(317, 129);
@@ -825,17 +828,38 @@
             this.label15.TabIndex = 11;
             this.label15.Text = "Income / Cut off:";
             // 
-            // textBox10
+            // otherIncome_text
             // 
-            this.textBox10.Location = new System.Drawing.Point(136, 98);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(172, 20);
-            this.textBox10.TabIndex = 13;
+            this.otherIncome_text.Location = new System.Drawing.Point(136, 98);
+            this.otherIncome_text.Name = "otherIncome_text";
+            this.otherIncome_text.ReadOnly = true;
+            this.otherIncome_text.Size = new System.Drawing.Size(172, 20);
+            this.otherIncome_text.TabIndex = 13;
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // otherdeductionsGroup
+            // 
+            this.otherdeductionsGroup.Controls.Add(this.textBox29);
+            this.otherdeductionsGroup.Controls.Add(this.label37);
+            this.otherdeductionsGroup.Controls.Add(this.textBox30);
+            this.otherdeductionsGroup.Controls.Add(this.textBox31);
+            this.otherdeductionsGroup.Controls.Add(this.label38);
+            this.otherdeductionsGroup.Controls.Add(this.label39);
+            this.otherdeductionsGroup.Controls.Add(this.textBox25);
+            this.otherdeductionsGroup.Controls.Add(this.label32);
+            this.otherdeductionsGroup.Controls.Add(this.textBox26);
+            this.otherdeductionsGroup.Controls.Add(this.textBox27);
+            this.otherdeductionsGroup.Controls.Add(this.label33);
+            this.otherdeductionsGroup.Controls.Add(this.label34);
+            this.otherdeductionsGroup.Controls.Add(this.label35);
+            this.otherdeductionsGroup.Location = new System.Drawing.Point(371, 493);
+            this.otherdeductionsGroup.Name = "otherdeductionsGroup";
+            this.otherdeductionsGroup.Size = new System.Drawing.Size(398, 217);
+            this.otherdeductionsGroup.TabIndex = 82;
+            this.otherdeductionsGroup.TabStop = false;
             // 
             // Form1
             // 
@@ -843,32 +867,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 844);
+            this.Controls.Add(this.otherdeductionsGroup);
             this.Controls.Add(this.otherIncome);
             this.Controls.Add(this.honorariumIncome);
             this.Controls.Add(this.basicIncome);
             this.Controls.Add(this.new_btn);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.save_btn);
             this.Controls.Add(this.netIncome_btn);
             this.Controls.Add(this.grossIncome_btn);
-            this.Controls.Add(this.textBox32);
+            this.Controls.Add(this.totalDeduction_text);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label41);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label39);
             this.Controls.Add(this.IncomeTaxContribution_text);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.label35);
             this.Controls.Add(this.PagibigContribution_text);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.PhilhealthContribution_text);
@@ -880,16 +892,16 @@
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.paydate);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.surname);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.middlename);
+            this.Controls.Add(this.firstname);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label16);
@@ -898,8 +910,8 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.departnemtName);
+            this.Controls.Add(this.employeeId);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -913,6 +925,8 @@
             this.honorariumIncome.PerformLayout();
             this.otherIncome.ResumeLayout(false);
             this.otherIncome.PerformLayout();
+            this.otherdeductionsGroup.ResumeLayout(false);
+            this.otherdeductionsGroup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -924,8 +938,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox employeeId;
+        private System.Windows.Forms.TextBox departnemtName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -939,19 +953,19 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox middlename;
+        private System.Windows.Forms.TextBox firstname;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox surname;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox paydate;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
@@ -977,12 +991,12 @@
         private System.Windows.Forms.TextBox textBox31;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox totalDeduction_text;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Button grossIncome_btn;
         private System.Windows.Forms.Button netIncome_btn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button save_btn;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button new_btn;
         private System.Windows.Forms.GroupBox basicIncome;
@@ -993,7 +1007,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox honorariumIncome_text;
         private System.Windows.Forms.GroupBox otherIncome;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -1001,8 +1015,9 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox otherIncome_text;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.GroupBox otherdeductionsGroup;
     }
 }
 
